@@ -1,0 +1,42 @@
+randomness set to off
+new mezo created:
+	id: f_1
+new ovohely created:
+	id: ovo_1
+	equipment: kesztyu
+new ovohely created:
+	id: ovo_2
+	equipment: kopeny
+new labor created:
+	id: lab
+	has bear: false
+	code: vedo
+ovo_1 has new neighbour: lab
+ovo_2 has new neighbour: lab
+ovo_1 has new neighbour: ovo_2
+virologist creation successful
+next player is v_1, neighbours:
+	lab
+	ovo_2
+getting equipment: successful
+move to ovo_2: successful
+getting equipment: successful
+next player is v_1, neighbours:
+	lab
+	ovo_1
+move to lab: successful
+getting code: successful
+v_1 won the game!!
+current equipment of v_1:
+    1: kesztyu
+    2: kopeny
+known agents of v_1:
+	vedo
+matter amount for v_1: 100
+using agent on v_1: successful
+current equipment of v_1:
+    1: kesztyu
+    2: kopeny
+known agents of v_1:
+	vedo
+matter amount for v_1: 80

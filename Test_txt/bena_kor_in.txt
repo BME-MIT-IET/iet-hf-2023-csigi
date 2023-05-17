@@ -1,0 +1,7 @@
+addlabor lab false benit
+newvir v0 lab true
+nextPlayer
+newvir v1 lab true
+getcode
+useagn benit v1
+nextPlayer

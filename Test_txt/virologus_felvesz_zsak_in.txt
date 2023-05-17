@@ -1,0 +1,10 @@
+isrand false
+addovohely ovo zsak
+newvir v_1 ovo false
+nextPlayer
+
+listeq v_1
+
+getequipment
+
+listeq v_1

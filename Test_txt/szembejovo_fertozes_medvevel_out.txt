@@ -1,0 +1,30 @@
+randomness set to off
+new field created:
+	id: f_1
+new labor created:
+	id: lab
+	has bear: true
+	code: benit
+f_1 has new neighbour: lab
+virologist creation successful
+virologist creation successful
+virologist creation successful
+next player is v_1, neighbours:
+	lab
+move to lab: successful
+
+v_1 is medve: true
+v_2 is medve: false
+v_3 is medve: false
+
+next player is v_2, neighbours:
+	lab
+next player is v_3, neighbours:
+	lab
+next player is v_1, neighbours:
+	f_1
+move to f_1: successful
+
+v_1 is medve: true
+v_2 is medve: true
+v_3 is medve: true

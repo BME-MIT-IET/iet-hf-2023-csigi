@@ -1,0 +1,19 @@
+addovohely ovo1 kopeny
+addovohely ovo2 balta
+addlabor lab true vedo
+addngh ovo1 ovo2
+addngh ovo2 lab
+
+newvir v0 ovo1 true
+nextPlayer
+getequipment
+move ovo2
+newvir v1 ovo2 true
+nextPlayer
+move lab
+nextPlayer
+getequipment
+move lab
+listagn v0
+useaxe v1
+

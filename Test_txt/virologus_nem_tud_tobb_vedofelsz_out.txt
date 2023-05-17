@@ -1,0 +1,43 @@
+randomness set to off
+new ovohely created:
+	id: ovo_1
+	equipment: kesztyu
+new ovohely created:
+	id: ovo_2
+	equipment: kopeny
+new ovohely created:
+	id: ovo_3
+	equipment: zsak
+new ovohely created:
+	id: ovo_4
+	equipment: balta
+ovo_1 has new neighbour: ovo_2
+ovo_2 has new neighbour: ovo_3
+ovo_3 has new neighbour: ovo_4
+virologist creation successful
+next player is v_1, neighbours:
+	ovo_2
+getting equipment: successful
+move to ovo_2: successful
+getting equipment: successful
+next player is v_1, neighbours:
+ovo_1
+ovo_3
+move to ovo_3: successful
+getting equipment: successful
+next player is v_1, neighbours:
+ovo_2
+ovo_4
+move to ovo_4: successful
+
+current equipment of v_1:
+1: kesztyu - 3
+2: kopeny
+3: zsak
+
+getting equipment: failed reason: nincs eleg hely felszerelesnek
+
+current equipment of v_1:
+1: kesztyu - 3
+2: kopeny
+3: zsak

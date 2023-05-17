@@ -1,0 +1,25 @@
+addovohely ovo1 kesztyu
+addovohely ovo2 kesztyu
+addlabor lab false benit
+
+addngh ovo1 ovo2
+addngh ovo1 lab
+addngh ovo2 lab
+
+newvir v0 lab true
+nextPlayer
+getcode
+move ovo1
+getequipment
+
+newvir v1 ovo2 true
+nextPlayer
+getequipment
+
+move ovo1
+nextPlayer
+useagn benit v1
+nextPlayer
+nextPlayer
+listeq v0
+listeq v1

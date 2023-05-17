@@ -1,0 +1,11 @@
+randomness set to off
+new mezo created:
+	id: f_1
+new mezo created:
+	id: f_2
+f_1 has new neighbour: f_2
+virologist creation successful
+next player is v_1, neighbours:
+	f_2
+
+move to f_2: successful

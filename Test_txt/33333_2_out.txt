@@ -1,0 +1,91 @@
+randomness set to off	
+new ovohely created:	
+	id: o_1	
+	equipment: kesztyu	
+new ovohely created:	
+	id: o_2	
+	equipment: balta	
+new ovohely created:	
+	id: o_3	
+	equipment: kopeny	
+new ovohely created:	
+	id: o_4	
+	equipment: zsak	
+new labor created:	
+	id: l_1	
+	has bear: true	
+	code: felejt	
+new labor created:	
+	id: l_2	
+	has bear: false	
+	code: benit	
+new labor created:	
+	id: l_3	
+	has bear: false	
+	code: vedo	
+new labor created:	
+	id: l_4	
+	has bear: false	
+	code: vitus	
+new raktar created:	
+	id: r_1	
+new raktar created:	
+	id: r_2	
+new raktar created:	
+	id: r_3	
+new raktar created:	
+	id: r_4	
+o_1 has new neighbour: o_2	
+o_1 has new neighbour: o_4	
+o_1 has new neighbour: l_1	
+o_2 has new neighbour: o_3	
+o_2 has new neighbour: l_1	
+o_3 has new neighbour: o_4	
+o_3 has new neighbour: l_2	
+o_4 has new neighbour: l_2	
+l_1 has new neighbour: l_2	
+l_1 has new neighbour: l_3	
+l_1 has new neighbour: r_1	
+l_2 has new neighbour: l_4	
+l_2 has new neighbour: r_2	
+l_3 has new neighbour: l_4	
+l_3 has new neighbour: r_3	
+l_4 has new neighbour: r_4	
+virologist creation successful	
+virologist creation successful	
+virologist creation successful	
+next player is v0, neighbours:	
+	o_1	
+	o_3	
+	l_1	
+getting equipment: successful	
+move to o_1: successful	
+getting equipment: successful	
+next player is v1, neighbours:	
+	o_1	
+	o_2	
+	l_2	
+	l_3	
+	r_1	
+getting code: successful	
+move to o_1: failed medve active, moved to o_1	
+using agent on v0: failed	
+next player is v2, neighbours:	
+	o_1	
+	o_3	
+	l_2	
+getting equipment: successful	
+move to l_2: successful	
+next player is v0, neighbours:	
+	o_2	
+	o_4	
+	l_1	
+move to l_1: failed medve active, moved to o_2	
+getting code: failed	
+current equipment of v0:	
+	1: balta - unused	
+	2: kesztyu - 2	
+current equipment of v2:	
+	1: zsak	
+known agents of v0:	
+known agents of v1:

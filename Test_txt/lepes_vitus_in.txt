@@ -1,0 +1,16 @@
+addlabor lab false vitus
+addraktar r1
+addraktar r2
+addraktar r3
+addraktar r4
+addraktar r5
+addngh lab r1
+addngh lab r2
+addngh lab r3
+addngh lab r4
+addngh lab r5
+newvir v0 lab true
+nextPlayer
+getcode
+useagn vitus v0
+move r1

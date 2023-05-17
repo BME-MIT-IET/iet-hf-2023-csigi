@@ -1,0 +1,27 @@
+isrand false
+addfield f_1
+addovohely ovo_1 kesztyu
+addovohely ovo_2 kopeny
+addlabor lab false vedo
+addngh ovo_1 lab
+addngh ovo_2 lab
+addngh ovo_1 ovo_2
+newvir v_1 ovo_1 true
+nextPlayer
+getequipment
+move ovo_2
+getequipment
+nextPlayer
+move lab
+getcode
+
+listeq v_1
+listcodes v_1
+showmatter v_1
+
+useagn vedo v_1
+
+listeq v_1
+listcodes v_1
+showmatter v_1
+

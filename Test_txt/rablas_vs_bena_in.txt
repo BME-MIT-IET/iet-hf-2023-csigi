@@ -1,0 +1,29 @@
+isrand false
+addlabor lab false benit
+addovohely ovo zsak
+addngh lab ovo
+newvir v_1 lab true
+newvir v_2 ovo true
+nextPlayer
+nextPlayer
+nextPlayer
+getequipment
+move lab
+nextPlayer
+getcode
+useagn benit v_2
+
+listeq v_1
+listeq v_2
+listagn v_1
+listagn v_2
+showmatter v_1
+showmatter v_2
+
+attack v_2
+
+listeq v_1
+listeq v_2
+showmatter v_1
+showmatter v_2
+

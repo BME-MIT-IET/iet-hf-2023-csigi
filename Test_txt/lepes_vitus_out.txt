@@ -1,0 +1,29 @@
+new labor created:
+	id: lab
+	has bear: false
+	code: vitus
+new raktar created:
+	id: r1
+new raktar created:
+	id: r2
+new raktar created:
+	id: r3
+new raktar created:
+	id: r4
+new raktar created:
+	id: r5
+lab has new neighbour: r1
+lab has new neighbour: r2
+lab has new neighbour: r3
+lab has new neighbour: r4
+lab has new neighbour: r5
+virologist creation successful
+next player is v0, neighbours:
+	r1
+	r2
+	r3
+	r4
+	r5
+getting code: successful
+using agent on v0: successful
+move to r1: failed vitus active, moved to r(1-5)

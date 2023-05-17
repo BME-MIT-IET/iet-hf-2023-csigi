@@ -1,0 +1,10 @@
+addlabor m0 false felejt
+addlabor m1 false felejt
+addngh m0 m1
+newvir v0 m0 true
+nextPlayer
+getcode
+move m1
+getcode
+listcodes v0
+

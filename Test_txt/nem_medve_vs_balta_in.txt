@@ -1,0 +1,6 @@
+addovohely ovo balta
+newvir v0 ovo true
+nextPlayer
+newvir v1 ovo true
+getequipment
+useaxe v1

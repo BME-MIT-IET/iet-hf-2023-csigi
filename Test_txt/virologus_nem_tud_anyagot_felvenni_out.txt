@@ -1,0 +1,11 @@
+randomness set to off
+new raktar created:
+	id: rakt
+virologist creation successful
+next player is v_1, neighbours:
+
+matter amount for v_1: 100
+
+getting matter: failed
+
+matter amount for v_1: 100 

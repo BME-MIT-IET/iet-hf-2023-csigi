@@ -1,0 +1,10 @@
+addlabor lab true benit
+addraktar rakt
+addngh lab rakt
+
+newvir v0 rakt false
+nextPlayer
+move lab
+nextPlayer
+move rakt
+getmatter

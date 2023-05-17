@@ -1,0 +1,8 @@
+new ovohely created:
+	id: ovo
+	equipment: balta
+virologist creation successful
+next player is v0, neighbours:
+virologist creation successful
+getting equipment: successful
+axeing v1:failed target not a bear

@@ -1,0 +1,39 @@
+new labor created:
+	id: m0
+	has bear: false
+	code: benit
+new labor created:
+	id: m1
+	has bear: false
+	code: vitus
+new raktar created:
+	id: r1
+new raktar created:
+	id: r2
+new raktar created:
+	id: r3
+m1 has new neighbour: r1
+m1 has new neighbour: r2
+m1 has new neighbour: r3
+m1 has new neighbour: m0
+virologist creation successful
+next player is v0, neighbours:
+m1
+virologist creation successful
+getting code: successful
+move to m1: successful
+getting code: successful
+using agent on v1: successful
+next player is v1, who is paralyzed
+next player is v0, neighbours:
+r1
+r2
+r3
+m0
+using agent on v1: successful
+next player is v1, neighbours:
+r1
+r2
+r3
+m0
+move to m0: failed vitus active, moved to r(1-3)

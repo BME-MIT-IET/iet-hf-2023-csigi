@@ -1,0 +1,21 @@
+new labor created:
+	id: lab
+	has bear: false
+	code: felejt
+new raktar created:
+	id: rak
+lab has new neighbour: rak
+virologist creation successful
+next player is v0, neighbours:
+	lab
+move to lab: successful
+next player is v0, neighbours:
+	rak
+move to rak: successful
+virologist creation successful
+next player is v1, neighbours:
+	lab
+next player is v0, neighbours:
+	lab
+move to lab: successful
+v1 is medve: true 

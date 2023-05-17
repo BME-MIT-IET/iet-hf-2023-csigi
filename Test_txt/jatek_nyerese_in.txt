@@ -1,0 +1,19 @@
+addlabor m0 false felejt
+addlabor m1 false vedo
+addlabor m2 false vitus
+addlabor m3 false benit
+addngh m0 m1
+addngh m1 m2
+addngh m2 m3
+newvir v0 m0 true
+nextPlayer
+getcode
+move m1
+getcode
+nextPlayer
+move m2
+getcode
+nextPlayer
+move m3
+getcode
+

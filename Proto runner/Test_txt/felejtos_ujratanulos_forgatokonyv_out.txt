@@ -1,0 +1,29 @@
+new labor created:
+	id: blab
+	has bear: false
+	code: benit
+new labor created:
+	id: flab
+	has bear: false
+	code: felejt
+flab has new neighbour: blab
+
+virologist creation successful
+next player is v0, neighbours:
+	flab
+getting code: successful
+move to flab: successful
+virologist creation successful
+next player is v1, neighbours:
+	blab
+getting code: successful
+using agent on v0: successful
+move to blab: successful
+getting code: successful
+v1 won the game!!
+next player is v0, neighbours:
+	blab
+move to blab: successful
+getting code: successful
+using agent on v1: successful
+next player is v1, who is paralyzed 

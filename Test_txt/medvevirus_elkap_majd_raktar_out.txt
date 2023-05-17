@@ -1,0 +1,17 @@
+new labor created:
+	id: lab
+	has bear: true
+	code: benit
+new raktar created:
+	id: rakt
+lab has new neighbour: rakt
+
+virologist creation successful
+next player is v0, neighbours:
+	lab
+move to lab: successful
+next player is v0, neighbours:
+	rakt
+move to rakt: successful
+getting matter: failed
+

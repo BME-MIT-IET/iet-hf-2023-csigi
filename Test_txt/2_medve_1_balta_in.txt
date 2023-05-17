@@ -1,0 +1,21 @@
+addovohely m0 balta
+addlabor lab true benit
+addngh lab m0
+
+newvir v0 m0 true
+nextPlayer
+getequipment
+
+newvir v1 m0 true
+nextPlayer
+move lab
+
+newvir v2 m0 true
+nextPlayer
+move lab
+
+nextPlayer
+move lab
+useaxe v1
+useaxe v2
+

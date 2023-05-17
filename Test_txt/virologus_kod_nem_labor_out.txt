@@ -1,0 +1,8 @@
+randomness set to off
+new mezo created:
+	id: nemlab
+virologist creation successful
+next player is v_1, neighbours:
+known agents of v_1:
+getting code: failed
+known agents of v_1:

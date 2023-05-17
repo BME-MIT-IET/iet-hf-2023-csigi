@@ -1,0 +1,19 @@
+new labor created:
+	id: m0
+	has bear: false
+	code: felejt
+new labor created:
+	id: m1
+	has bear: false
+	code: felejt
+m0 has new neighbour: m1
+virologist creation successful
+next player is v0, neighbours:
+	m1
+getting code: successful
+v0 won the game!!
+move to m1: successful
+getting code: failed
+v0 won the game!!
+known agents of v0:
+	felejt

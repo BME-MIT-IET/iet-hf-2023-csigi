@@ -1,0 +1,15 @@
+randomness set to off
+new labor created:
+	id: lab
+	has bear: false
+	code: vedo
+virologist creation successful
+next player is v_1, neighbours:
+
+known agents of v_1:
+
+getting code: successful
+v_1 won the game!!
+
+known agents of v_1:
+	vedo 

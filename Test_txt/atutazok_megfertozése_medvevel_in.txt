@@ -1,0 +1,13 @@
+addlabor lab true felejt
+addraktar rak
+addngh lab rak
+newvir v0 rak true
+nextPlayer
+move lab
+nextPlayer
+move rak
+newvir v1 rak true
+nextPlayer
+nextPlayer
+move lab
+ismedve v1

@@ -1,0 +1,16 @@
+randomness set to off
+new mezo created:
+id: f_1
+virologist creation successful
+virologist creation successful
+next player is v_2, neighbours:
+
+current agents on v_1:
+current agents on v_2:
+
+attacking v_1: failed reason: celpont nem benult
+
+current equipment of v_1:
+current equipment of v_2:
+matter amount for v_1: 100
+matter amount for v_2: 0 

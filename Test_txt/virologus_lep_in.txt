@@ -1,0 +1,7 @@
+isrand false
+addfield f_1
+addfield f_2
+addngh f_1 f_2
+newvir v_1 f_1 false
+nextPlayer
+move f_2
