@@ -11,6 +11,11 @@ import java.util.Random;
  */
 public class Vitustancolo extends Lepes
 {
+	/** Random szám generáló objektum a véletlen lépés megvalósításához
+	 * @author Benczik
+	 */
+	private Random rand = new Random();
+
 	/**
 	 * Visszaadja az adott lépés prioritását.
 	 * @return Prioritás
@@ -28,7 +33,7 @@ public class Vitustancolo extends Lepes
 	public int lepes(int to, int n)
 	{
 		if(Controller.random)
-			return new Random().nextInt(n);
+			return rand.nextInt(n);
 		else
 			return 0;
 	}
