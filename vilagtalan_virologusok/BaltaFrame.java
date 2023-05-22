@@ -36,8 +36,7 @@ public class BaltaFrame extends JDialog {
  * Ha nem üres stringet return-öl, akkor azt megjelenítjük egy üzenetablakban a hibaüzenetet
  * @author Benczik
  */
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+        buttonOK.addActionListener(_event -> {
                 try {
                     String args = comboBox1.getSelectedItem().toString();
                     String error = Controller.useAxe(args);
@@ -48,15 +47,11 @@ public class BaltaFrame extends JDialog {
                 }
                 onOK();
             }
-        });
+        );
 /**
  * A Cancel a gomb megnyomásakor nem teszünk semmit, meghívjuk az onCancel fgv-t, ami eldobja a Frame-t
  */
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
+        buttonCancel.addActionListener(__event -> onCancel());
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -67,11 +62,7 @@ public class BaltaFrame extends JDialog {
         });
 
         // call onCancel() on ESCAPE
-        contentPane.registerKeyboardAction(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        contentPane.registerKeyboardAction(_event -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
     private void onOK() {
