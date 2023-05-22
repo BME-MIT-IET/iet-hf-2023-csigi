@@ -19,13 +19,23 @@ public class Controller {
     private static Jatek jatek;
 
     /**Bena lepes prioritasa*/
-    public static final int benalepes_priority = 30;
+    public static final int BENALEPES_PRIORITY = 30;
     /**Medve lepes prioritasa*/
-    public static final int medvelepes_priority = 25;
+    public static final int MEDVELEPES_PRIORITY = 25;
     /**Veletlensyeruseget vezerlo valtozo*/
     public static boolean random = true;
     /**Elindult e a jatek*/
     private static boolean started = false; //TODO: Új játéknál állítsuk át true-ra
+
+    /**
+     * String konstansok a különböző hibaüzenetekre
+     * @author Benczik
+     */
+    private static final String VIROLOGIST_DOES_NOT_EXIST = "Failed: virologist doesn't exist";
+    private static final String GAME_HAS_NOT_STARTED = "Failed: the game hasn't started yet";
+    private static final String NOT_ENOUGH_ARGUMENTS = "Failed: not enough arguments";
+    private static final String ID_IS_NAN_ARGUMENT = "Failed: bad arguments (id is NaN)";
+    private static final String NOT_EXISTING_VIROLOGIST = "Failed: virologist by this id doesn't exist";
 
     /**Belepesi pont*/
     public static void main(String[] args){
@@ -80,7 +90,7 @@ public class Controller {
      */
     public static ArrayList<String> listcodes(){
         Virologus v = jatek.getVirologus(jatek.getActiveVirologusID());
-        if(v == null){System.out.println("Failed: virologist doesn't exist"); return null;}
+        if(v == null){System.out.println(VIROLOGIST_DOES_NOT_EXIST); return null;}
 
         ArrayList<String> kodok = new ArrayList<>();
         for(Agens a: v.getIsmertKodok()){
@@ -97,7 +107,7 @@ public class Controller {
     public static boolean isMedve(String vir_id){
 
         Virologus v = jatek.getVirologus(vir_id);
-        if(v == null){System.out.println("Failed: virologist doesn't exist"); return false;}        // ez jó, hogy ilyenkor false-t ad vissza?
+        if(v == null){System.out.println(VIROLOGIST_DOES_NOT_EXIST); return false;}        // ez jó, hogy ilyenkor false-t ad vissza?
 
         return v.isMedve();
     }
@@ -109,7 +119,7 @@ public class Controller {
      */
     public static int showmatter(String vir_id){
         Virologus v = jatek.getVirologus(vir_id);
-        if(v == null){System.out.println("Failed: virologist doesn't exist"); return -1;}
+        if(v == null){System.out.println(VIROLOGIST_DOES_NOT_EXIST); return -1;}
         return v.getAnyag().mennyi();
     }
 
@@ -145,7 +155,7 @@ public class Controller {
         }
 
         String vir_id = jatek.getActiveVirologusID();
-        if(vir_id == null){System.out.println("Failed: the game hasn't started yet"); return "Failed: the game hasn't started yet";}
+        if(vir_id == null){System.out.println(GAME_HAS_NOT_STARTED); return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(vir_id);
         ArrayList<Vedofelsz> vdfsz = v.getVedofelszList();
 
@@ -159,41 +169,6 @@ public class Controller {
         System.out.println("Failed: Virologus doens't have this type of Vedofelsz");
         return "Failed: Virologus doens't have this type of Vedofelsz";
     }
-
-//    /**
-//     * Palyahoz {@link Ovohely}et ado parancs fuggvenye
-//     * @param args az 1 indexű stringben található a mező id-ja
-//     *             a 2 indexű stringben található hogy milyen védőfelszerelés legyen az óvóhelyen (kesztyu, zsak, kopeny vagy balta)
-//     */
-//    public static void addovohely(String[] args){
-//        if(args == null || args.length < 3){System.out.println("Failed: not enough arguments"); return;}
-//
-//        String field_id = null;
-//        try{
-//            field_id = args[1];
-//        } catch(NumberFormatException e){
-//            System.out.println("Failed: bad argument (id is NaN)");
-//            return;
-//        }
-//        Vedofelsz vedfelsz = null;
-//        switch(args[2]){
-//            case("kesztyu"):
-//                vedfelsz = new Kesztyu(); break;
-//            case("zsak"):
-//                vedfelsz = new Zsak(); break;
-//            case("kopeny"):
-//                vedfelsz = new Kopeny(); break;
-//            case("balta"):
-//                vedfelsz = new Balta(); break;
-//            default:
-//                System.out.println("Failed: invalid equipment");
-//                return;
-//        }
-//
-//        jatek.addField(field_id, Jatek.FieldType.OVOHELY, vedfelsz, false, null);
-//        System.out.println("new ovohely created:\n\tid: "+field_id+"\n\tequipment: " + args[2]);
-//    }
-
 
     /**
      * Elindít egy új játékot, létrehozza hozzá a pályát, illetve hozzáadja a játékosokat.
@@ -220,15 +195,15 @@ public class Controller {
      * @param args {"", következőMezőIDje}
      */
     public static String move(String[] args){
-        if(args == null || args.length < 2){ return "Failed: not enough arguments"; }
+        if(args == null || args.length < 2){ return NOT_ENOUGH_ARGUMENTS; }
 
         String neigh_id = null;
         try{neigh_id = args[1];}
-        catch(NumberFormatException e){ return "Failed: bad argument (id is NaN)";}
+        catch(NumberFormatException e){ return ID_IS_NAN_ARGUMENT;}
         System.out.print(neigh_id+": ");
 
         String vir_id = jatek.getActiveVirologusID();
-        if(vir_id== null){ return  "Failed: the game hasn't started yet";}
+        if(vir_id== null){ return  GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(vir_id);
 
             try {
@@ -244,7 +219,7 @@ public class Controller {
                         return "Failed Bena active";
                     else if(v.isMedve())
                         return "Failed medve active, moved to " + jatek.getMezoId(v.getMostMezo());
-                    else if (sik && jatek.getMezoId(v.getMostMezo()).compareTo(neigh_id) == 0)
+                    else if (jatek.getMezoId(v.getMostMezo()).compareTo(neigh_id) == 0)
                         return "";
                     else
                         return "Failed vitus active, moved to " + jatek.getMezoId(v.getMostMezo());
@@ -255,7 +230,6 @@ public class Controller {
             } catch (Exception e) {
                 return "Failed: ismeretlen";
             }
-        //}
     }
 
     /**
@@ -266,7 +240,7 @@ public class Controller {
      */
     public static String useAgn(String vir_id, String agens){
         String activeID = jatek.getActiveVirologusID();
-        if(activeID == null){return "Failed: the game hasn't started yet";}
+        if(activeID == null){return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(activeID);
 
         System.out.print(vir_id+": ");
@@ -299,20 +273,20 @@ public class Controller {
      */
     public static String attack(String[] args){
         System.out.print("attacking ");
-        if(args == null|| args.length< 2){return "Failed: not enough arguments";}
+        if(args == null|| args.length< 2){return NOT_ENOUGH_ARGUMENTS;}
         String vir_id = jatek.getActiveVirologusID();
-        if(vir_id == null){System.out.println("Failed: the game hasn't started yet"); return "Failed: the game hasn't started yet";}
+        if(vir_id == null){System.out.println(GAME_HAS_NOT_STARTED); return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(vir_id);
 
         try {
             vir_id = args[1];
         } catch (NumberFormatException e) {
-            System.out.println("Failed: bad argument (id is NaN)");
-            return "Failed: bad argument (id is NaN)";
+            System.out.println(ID_IS_NAN_ARGUMENT);
+            return ID_IS_NAN_ARGUMENT;
         }
         System.out.print(vir_id+":");
         Virologus v2 = jatek.getVirologus(vir_id);
-        if(v2 == null){System.out.println("Failed: Virologus by this id doesn't exist"); return "Failed: Virologus by this id doesn't exist";}
+        if(v2 == null){System.out.println(NOT_EXISTING_VIROLOGIST); return "NOT_EXISTING_VIROLOGIST;}
         if(v == v2){return "Failed: Can't attack self";};
 
         //Ellenorzi, hogy egy mezon allnak e
@@ -322,7 +296,7 @@ public class Controller {
                 sameMezo = true; break;
             }
         }
-        if(!sameMezo){System.out.println("Failed: Virologists have to be standing on the same field to attack"); return "Failed: Virologus by this id doesn't exist";}
+        if(!sameMezo){System.out.println("Failed: Virologists have to be standing on the same field to attack"); return NOT_EXISTING_VIROLOGIST;}
 
         v.tamaddMeg(v2);
         if(v2.isBena())
@@ -342,12 +316,12 @@ public class Controller {
      */
     public static String useAxe(String vir_id){
         String activeId = jatek.getActiveVirologusID();
-        if(activeId == null){return "Failed: the game hasn't started yet";}
+        if(activeId == null){return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(activeId);
 
         System.out.print(vir_id+":");
         Virologus v2 = jatek.getVirologus(vir_id);
-        if(v2 == null){ return "Failed: Virologus by this id doesn't exist";}
+        if(v2 == null){ return NOT_EXISTING_VIROLOGIST;}
 
         //Ellenorzi, hogy egy mezon allnak e
         boolean sameMezo = false;
@@ -379,7 +353,7 @@ public class Controller {
      */
     public static String getcode(){
         String vir_id = jatek.getActiveVirologusID();
-        if(vir_id == null){ return "Failed: the game hasn't started yet";}
+        if(vir_id == null){ return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(vir_id);
         boolean success = v.tapogasdLe();
         if(!success)
@@ -397,7 +371,7 @@ public class Controller {
     public static String getMatter(){
         //System.out.print("getting matter: ");
         String vir_id = jatek.getActiveVirologusID();
-        if(vir_id == null){return "Failed: the game hasn't started yet";}
+        if(vir_id == null){return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(vir_id);
         int old_amount = v.getAnyag().mennyi();
         v.addAnyag();
@@ -414,7 +388,7 @@ public class Controller {
     public static String getEquipment(){
         System.out.print("getting equipment: ");
         String vir_id = jatek.getActiveVirologusID();
-        if(vir_id == null){return "Failed: the game hasn't started yet";}
+        if(vir_id == null){return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(vir_id);
         if (v.getVedofelszList().size() >= 3){
             return "nincs eleg hely felszerelesnek";
@@ -448,15 +422,15 @@ public class Controller {
      */
     public static void listagn(String[] args){
         System.out.print("current agents on ");
-        if(args == null|| args.length < 2){System.out.println("Failed: not enough arguments"); return;}
+        if(args == null|| args.length < 2){System.out.println(NOT_ENOUGH_ARGUMENTS); return;}
         System.out.println(args[1]+":");
 
         String vir_id = null;
         try{ vir_id = args[1];}
-        catch(NumberFormatException e){System.out.println("Failed: bad argument (id is NaN)"); return;}
+        catch(NumberFormatException e){System.out.println(ID_IS_NAN_ARGUMENT); return;}
 
         Virologus v = jatek.getVirologus(vir_id);
-        if(v == null){System.out.println("Failed: Virologus by this id doesn't exist"); return;}
+        if(v == null){System.out.println(NOT_EXISTING_VIROLOGIST); return;}
         ArrayList<Agens> agns = v.getAgensek();
         for(Agens ag: agns){
             System.out.println("\t"+ag.getName());
@@ -471,7 +445,7 @@ public class Controller {
         String vir_id = jatek.getActiveVirologusID();
         if(vir_id == null){
             JOptionPane.showMessageDialog(jatek.frame,
-                    "Failed: the game hasn't started yet");
+                    GAME_HAS_NOT_STARTED);
             return null;
         }
 
@@ -492,7 +466,7 @@ public class Controller {
      */
     public static void isrand(String[] args){
         System.out.print("randomness set to ");
-        if(args == null || args.length < 2){System.out.println("Failed: not enough arguments"); return;}
+        if(args == null || args.length < 2){System.out.println(NOT_ENOUGH_ARGUMENTS); return;}
         boolean setTo = Boolean.parseBoolean(args[1]);
         random = setTo;
         System.out.println(setTo ? "on" : "off");

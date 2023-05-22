@@ -20,7 +20,7 @@ public class Kopeny extends Vedofelsz {
 	public Kopeny(Virologus v){
 		tulaj = v;
 		v.addVedofelsz(this);
-		int a = Controller.benalepes_priority;
+		int a = Controller.BENALEPES_PRIORITY;
 	}
 
 	/**
