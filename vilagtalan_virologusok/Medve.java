@@ -7,11 +7,11 @@ public class Medve extends Agens
     /**
      * A megpéldányosított Medve_lepes referenciája
      */
-    private final Medvetancolo medve;
+    private final Medvetancolo medve_lepes;
 
     Medve()
     {
-        medve = new Medvetancolo();
+        medve_lepes = new Medvetancolo();
     }
 
 
@@ -24,7 +24,7 @@ public class Medve extends Agens
         if (!elhasznalt) {
             elhasznalt = true;
             virologus = v;
-            v.addLepes(medve);
+            v.addLepes(medve_lepes);
         }
     }
 
