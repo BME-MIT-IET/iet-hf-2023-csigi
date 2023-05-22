@@ -49,6 +49,7 @@ public class Kesztyu extends Vedofelsz {
 	 * Figyeli, hogy elhasználódott-e a kesztyű, ha igen, meghívja az end()-et.
 	 * @author Vesztergombi
 	 * */
+	@Override
 	public void tick() {
 		if (elet <= 0){
 			tulaj.removeVedofelsz(this);

@@ -23,6 +23,7 @@ public class Benit extends Agens {
 	 * Hozzáad a paraméterben kapott virológus lépésmanageréhez egy bena lépést
 	 * @param v Ki az a Virologus aki le fog bénulni
 	 */
+	@Override
 	public void begin(Virologus v)
 	{
 		if (!elhasznalt){
@@ -37,6 +38,7 @@ public class Benit extends Agens {
 	 * Az ágens lejáratának a kezelése.
 	 * Eltávolítja a tárolt referenciát a lépések közül-
 	 */
+	@Override
 	public void end() { virologus.removeLepes(bena); }
 	
 	/**

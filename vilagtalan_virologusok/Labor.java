@@ -48,6 +48,7 @@ public class Labor extends Mezo {
 
 	/**A virologus letapogatja a genetikai kódot
 	 * @return A laborban lévő genetikai kód */
+	@Override
 	public Agens letapogat() {
 		return kod;
 	}
