@@ -32,7 +32,7 @@ public class NewGameFrame extends JDialog {
                 try {
                     int virc = Integer.parseInt(comboBox1.getSelectedItem().toString());
                     String error = Controller.newgame(virc);
-                    if (error != "")
+                    if (error.equals(""))
                         JOptionPane.showMessageDialog(contentPane, error);
                     src.update();
                     onOK();
