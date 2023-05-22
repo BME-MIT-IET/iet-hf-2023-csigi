@@ -87,16 +87,18 @@ public class KenFrame extends JDialog {
 
         if (Controller.listNgh() == null)
             System.out.println("nincs szomszédos virológus lista");
-        else for (String vir : Controller.listNgh())
-            virs.add(vir);
+        else
+            for (String vir : Controller.listNgh())
+                virs.add(vir);
 
         comboBox1 = new JComboBox(virs.toArray());
         ArrayList<String> agents = new ArrayList<>();
 
         if (Controller.listcodes() == null)
             System.out.println("nincs kódlista");
-        else for (String agn : Controller.listcodes())
-            agents.add(agn);
+        else
+            for (String agn : Controller.listcodes())
+                agents.add(agn);
 
         comboBox2 = new JComboBox(agents.toArray());
     }
