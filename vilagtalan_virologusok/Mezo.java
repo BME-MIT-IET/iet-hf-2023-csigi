@@ -75,20 +75,24 @@ public class Mezo {
 	/**
 	 * Megpróbálja felvenni a tárolt anyagot (nem sikerül)
 	 * */
-	public void felveszAnyag(Virologus v) { }
+	public void felveszAnyag(Virologus v) {
+		//Sima mezőn nem lehet anyagot felvenni, ezért üres ez a metódus
+	}
 	
 	/**
 	 * Megpróbálja felvenni az itt lévő felszerelést (nem sikerül)
 	 * */
 	public Vedofelsz felveszVedofelsz() {
-		return null; //new Zsak();
+		return null;
 	}
 
 	/**
 	 * Raktár típusú mezőn elpusztítja az ott lévő anyagot
 	 * @author sisak
 	 */
-	public void Destroy(){}
+	public void Destroy(){
+		//Csak a raktárnál van értelme elpusztítani az ott lévő anyagot, a Raktárnál felül van definiálva
+	}
 
 	/**
 	 * Visszaadja a mező típusának nevét

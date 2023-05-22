@@ -289,7 +289,7 @@ public class Jatek {
 	 * @param field_id a torlendo mezo azonositoja
 	 */
 	public void removeField(Integer field_id){
-
+		throw new UnsupportedOperationException();
 	}
 
 	/**
