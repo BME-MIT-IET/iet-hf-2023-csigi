@@ -7,7 +7,7 @@ run-name: ${{ github.actor }} is pushing or create a pull_request to main branch
 # The action is run if someone pus or create a push request to main branch
 on:
   push:
-    branches: [ main, BuildFramework+CI ]
+    branches: [ main ]
   pull_request:
     branches: [ main ]
 

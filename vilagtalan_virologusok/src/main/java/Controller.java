@@ -29,7 +29,7 @@ public class Controller {
     /**Belepesi pont*/
     public static void main(String[] args){
         Controller c = new Controller();
-        jatek = new Jatek(frame);doNotBuild
+        jatek = new Jatek(frame);
         newgame(3);
         frame = new MainFrame();
     }
