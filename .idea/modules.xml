@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Szoftprojlab.iml" filepath="$PROJECT_DIR$/Szoftprojlab.iml" />
+      <module fileurl="file://$PROJECT_DIR$/vilagtalan_virologusok/vilagtalan_virologusok.iml" filepath="$PROJECT_DIR$/vilagtalan_virologusok/vilagtalan_virologusok.iml" />
     </modules>
   </component>
 </project>
