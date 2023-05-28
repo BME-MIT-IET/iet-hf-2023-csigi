@@ -50,23 +50,22 @@ public class Lepesmgr
 	 * @param n jelenlegi szomszédok száma
 	 * @return hányadik szomszédra lép
 	 */
-	public int Lep(int to, int n)
+	public int lep(int to, int n)
 	{
 		if (lepesek.size() == 0)
 			throw new RuntimeException("Hibás a Lépésmgr!");
-		int maxi = 0;
-		int maxip = 0;
+		int maxIndex = 0;
+		int maxPriority = 0;
 		for (int i = 1; i < lepesek.size(); ++i)
 		{
 			int jelp = lepesek.get(i).getPriority();
-			if(jelp > maxip)
+			if(jelp > maxPriority)
 			{
-				maxi = i;
-				maxip = jelp;
+				maxIndex = i;
+				maxPriority = jelp;
 			}
 		}
-		int res = lepesek.get(maxi).lepes(to, n);
-		return res;
+		return lepesek.get(maxIndex).lepes(to, n);
 	}
 
 	/**

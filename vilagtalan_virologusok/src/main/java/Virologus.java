@@ -1,4 +1,3 @@
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 
 
@@ -274,7 +273,7 @@ public class Virologus implements Leptetheto {
         if(lepett)
             return false;
         lepett = true;
-        int lep = lepesmgr.Lep(i, szomszedok.size());
+        int lep = lepesmgr.lep(i, szomszedok.size());
         boolean medve = lepesmgr.medve();
         if (lep != -1) {
             if (medve)
