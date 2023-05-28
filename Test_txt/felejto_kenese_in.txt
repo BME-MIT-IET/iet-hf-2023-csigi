@@ -1,9 +1,0 @@
-addlabor m0 false felejt
-newvir v0 m0 true
-nextPlayer
-getcode
-newvir v1 m0 true
-nextPlayer
-getcode
-useagn felejt v0
-listcodes v0

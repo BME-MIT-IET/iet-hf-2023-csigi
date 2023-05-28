@@ -1,8 +1,0 @@
-isrand false
-addraktar rak
-newvir v_1 rak false
-nextPlayer
-showmatter v_1
-getmatter
-showmatter v_1
-

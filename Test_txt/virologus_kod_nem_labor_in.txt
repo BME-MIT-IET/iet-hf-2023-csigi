@@ -1,7 +1,0 @@
-isrand false
-addfield nemlab
-newvir v_1 nemlab false
-nextPlayer
-listcodes v_1
-getcode
-listcodes v_1

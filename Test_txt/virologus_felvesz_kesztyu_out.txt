@@ -1,9 +1,0 @@
-new ovohely created:
-	id: ovo
-	equipment: kesztyu
-virologist creation successful
-next player is v_1, neighbours:
-current equipment of v_1:
-getting equipment: successful 
-current equipment of v_1:
-1: kesztyu - 3

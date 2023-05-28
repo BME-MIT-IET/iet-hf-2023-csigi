@@ -1,5 +1,0 @@
-addlabor m0 false vedo
-newvir v0 m0 false
-nextPlayer
-getcode
-useagn vedo v0

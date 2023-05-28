@@ -9,8 +9,5 @@
         <module name="vilagtalan_virologusok" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="vilagtalan_virologusok" target="17" />
-    </bytecodeTargetLevel>
   </component>
 </project>

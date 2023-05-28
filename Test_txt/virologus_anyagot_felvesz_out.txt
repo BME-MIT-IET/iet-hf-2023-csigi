@@ -1,8 +1,0 @@
-randomness set to off
-new raktar created:
-	id: rak
-virologist creation successful
-next player is v_1, neighbours:
-matter amount for v_1: 0
-getting matter: successful
-matter amount for v_1: 100
