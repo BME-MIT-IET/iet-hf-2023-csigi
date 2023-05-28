@@ -285,7 +285,7 @@ public class Controller {
         }
         System.out.print(vir_id+":");
         Virologus v2 = jatek.getVirologus(vir_id);
-        if(v2 == null){System.out.println(NOT_EXISTING_VIROLOGIST); return "NOT_EXISTING_VIROLOGIST;}
+        if(v2 == null){System.out.println(NOT_EXISTING_VIROLOGIST); return "NOT_EXISTING_VIROLOGIST";}
         if(v == v2){return "Failed: Can't attack self";};
 
         //Ellenorzi, hogy egy mezon allnak e
@@ -313,7 +313,7 @@ public class Controller {
      * @return üres string ha nincs hiba, a hibaüzenettet tartalmezó string ha van
      * @author Benczik
      */
-    public static String useAxe(String vir_id){
+    public static String useAxe(String vir_id) {
         String activeId = jatek.getActiveVirologusID();
         if(activeId == null){return GAME_HAS_NOT_STARTED;}
         Virologus v = jatek.getVirologus(activeId);
