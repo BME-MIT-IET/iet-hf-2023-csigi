@@ -17,6 +17,7 @@ public class Raktar extends Mezo {
 	 * Az anyag fölvételekor hívódik meg, végrehajtja az anyag felvételét.
 	 * @author sisak
 	 * */
+	@Override
 	public void felveszAnyag(Virologus v) {
 		if(isActive) {
 			Anyag anyg = v.getAnyag();

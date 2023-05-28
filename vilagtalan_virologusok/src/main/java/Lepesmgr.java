@@ -77,7 +77,7 @@ public class Lepesmgr
 	{
 		int max = 0;
 		for (Lepes lepes : lepesek) {max = Math.max(lepes.getPriority(), max);}
-		return  max == Controller.benalepes_priority;
+		return  max == Controller.BENALEPES_PRIORITY;
 	}
 
 	/**
@@ -87,7 +87,7 @@ public class Lepesmgr
 	public boolean medve()
 	{
 		boolean medve = false;
-		for (Lepes lepes : lepesek) {if(lepes.getPriority() == Controller.medvelepes_priority) medve = true;}
+		for (Lepes lepes : lepesek) {if(lepes.getPriority() == Controller.MEDVELEPES_PRIORITY) medve = true;}
 		return medve;
 	}
 }

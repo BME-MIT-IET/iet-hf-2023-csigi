@@ -34,6 +34,7 @@ public class Vitustanc extends Agens {
 	 * Az ágens lejáratának a kezelése.
 	 * Eltávolítja a tárolt referenciát a lépések közül-
 	 */
+	@Override
 	public void end() {	virologus.removeLepes(vitustancolo); }
 	
 	/** Klónozza az ágenst*/

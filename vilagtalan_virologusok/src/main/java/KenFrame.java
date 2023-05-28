@@ -25,8 +25,7 @@ public class KenFrame extends JDialog {
         setModal(true);
         getRootPane().setDefaultButton(buttonOK);
 
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+        buttonOK.addActionListener(_event -> {
                 String error = Controller.useAgn((String) comboBox1.getSelectedItem(), (String) comboBox2.getSelectedItem());
                 if (!error.equals("")) {
                     JOptionPane.showMessageDialog(new JPanel(), error);
@@ -34,13 +33,9 @@ public class KenFrame extends JDialog {
                 src.update();
                 onOK();
             }
-        });
+        );
 
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
+        buttonCancel.addActionListener(_event -> onCancel());
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -51,11 +46,7 @@ public class KenFrame extends JDialog {
         });
 
         // call onCancel() on ESCAPE
-        contentPane.registerKeyboardAction(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        contentPane.registerKeyboardAction(_event -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
     /**
@@ -85,16 +76,18 @@ public class KenFrame extends JDialog {
 
         if (Controller.listNgh() == null)
             System.out.println("nincs szomszédos virológus lista");
-        else for (String vir : Controller.listNgh())
-            virs.add(vir);
+        else
+            for (String vir : Controller.listNgh())
+                virs.add(vir);
 
         comboBox1 = new JComboBox(virs.toArray());
         ArrayList<String> agents = new ArrayList<>();
 
         if (Controller.listcodes() == null)
             System.out.println("nincs kódlista");
-        else for (String agn : Controller.listcodes())
-            agents.add(agn);
+        else
+            for (String agn : Controller.listcodes())
+                agents.add(agn);
 
         comboBox2 = new JComboBox(agents.toArray());
     }
