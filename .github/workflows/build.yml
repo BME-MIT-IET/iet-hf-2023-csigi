@@ -1,0 +1,30 @@
+# The Action name
+name: CI
+
+# A CI action describes how it triggered the action
+run-name: ${{ github.actor }} is pushing or create a pull_request to main branch
+
+# The action is run if someone pus or create a push request to main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build:
+    # The buuilding job is run on an latest ubuntu wm
+    runs-on: ubuntu-latest
+    steps:
+      # Checkout for the action
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+      # We are using maven JDK 17
+      - name: Set up JDK 17
+        uses: actions/setup-java@v3
+        with:
+          java-version: '17'
+          distribution: 'adopt'
+          cache: maven
+      - name: Build with Maven
+        run: mvn -B -f vilagtalan_virologusok/pom.xml clean package
