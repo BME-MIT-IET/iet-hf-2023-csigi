@@ -77,7 +77,7 @@ public class Jatek {
 	 * Létrehoz paraméterben megadott számú mezőt, random típusúakat, random esetleges tartalommal.
 	 * @param boardSize Mennyi mező jöjjön létre.
 	 */
-	public void generateMezok(int boardSize){
+	private void generateMezok(int boardSize){
 		int r1, r2;
 		Random rand = new Random();
 		for (int i = 0; i < boardSize; ++i){
@@ -116,7 +116,7 @@ public class Jatek {
 	 * A generált mezőkhöz beállítja, hogy egyesek egymás szomszédai legyenek.
 	 * Figyel arra, hogy a létrehozott szomszédsági gráf összefüggő legyen az összes mezőre nézve
 	 */
-	public void boardSzomszed(){
+	private void boardSzomszed(){
 		Random rand = new Random();
 		int r;
 		ArrayList<Mezo> szomszedok = new ArrayList<>();
@@ -145,7 +145,7 @@ public class Jatek {
 	 * Paraméterben megadott számú virológust generál és elhelyezi a pályán véletlenszerűen.
 	 * @param virologusCount mennyi virológus legyen a pályán
 	 */
-	public void virologusokElhelyez(int virologusCount, Jatek jatek){
+	private void virologusokElhelyez(int virologusCount, Jatek jatek){
 		Random rand = new Random();
 		int r;
 		for (int i = 0; i < virologusCount; ++i){
@@ -235,8 +235,8 @@ public class Jatek {
 	 * @param agn2 a másik ágens
 	 * @return true ha a két paraméter ugyanolyan típusú ágens, false egyébként
 	 */
-	public boolean compareAgn(Agens agn1, Agens agn2){
-		return agn1.getName() == agn2.getName();
+	private boolean compareAgn(Agens agn1, Agens agn2){
+		return agn1.getName().equals(agn2.getName());
 	}
 
 	public boolean containsAgn(ArrayList<Agens> agnList, Agens agn){
@@ -254,7 +254,7 @@ public class Jatek {
 	 * @param isBear Fertoz e medvevirussal (csak labor)
 	 * @param code A mezon talalhato kod (csak labor)
 	 */
-	public void addField(String field_id, FieldType field_type, Vedofelsz equipment, boolean isBear, Agens code){
+	private void addField(String field_id, FieldType field_type, Vedofelsz equipment, boolean isBear, Agens code){
 		//switch (FieldType.values()[field_type]){
 		switch (field_type){
 			case MEZO:
@@ -288,7 +288,7 @@ public class Jatek {
 	 * Torol egy mezot a palyarol
 	 * @param field_id a torlendo mezo azonositoja
 	 */
-	public void removeField(Integer field_id){
+	private void removeField(Integer field_id){
 
 	}
 
