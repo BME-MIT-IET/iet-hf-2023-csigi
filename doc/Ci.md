@@ -28,6 +28,6 @@ I see how powerful it is. And it seems really spectacular.
 It is comforting when I push and then become the green check icon.
 
 ### Some overview picture
-<img src="pictures/ci_1.png">
-<img src="pictures/ci_2.png">
-<img src="pictures/ci_3.png">
+<img src="sources/ci_1.png">
+<img src="sources/ci_2.png">
+<img src="sources/ci_3.png">
