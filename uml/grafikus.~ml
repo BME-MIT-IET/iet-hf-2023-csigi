@@ -52,7 +52,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="Jqk0IMqXgUKuUpdyEYB3rAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="bt/+zcsMzUe4IXfQoumKXQAA">
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="OJhVuIMnGE6aay66uYyk+gAA">
 <XPD:ATTR name="Text" type="string">&lt;&lt;singleton&gt;&gt;</XPD:ATTR>
@@ -1463,7 +1463,7 @@
 </XPD:OBJ>
 <XPD:ATTR name="#OwnedElements" type="integer">20</XPD:ATTR>
 <XPD:OBJ name="OwnedElements[0]" type="UMLClass" guid="iJs2QTS7vUCWUyUPo53bnwAA">
-<XPD:ATTR name="Name" type="string">Controller</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">domain.Controller</XPD:ATTR>
 <XPD:ATTR name="StereotypeName" type="string">singleton</XPD:ATTR>
 <XPD:REF name="Namespace">sO3qhlx9n0uwR4rZpg0UeQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">4</XPD:ATTR>
@@ -1483,7 +1483,7 @@
 </XPD:OBJ>
 <XPD:OBJ name="Parameters[1]" type="UMLParameter" guid="PQJ5+MHK1UeLLFibhcLb7AAA">
 <XPD:ATTR name="Name" type="string">v</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Virologus</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">domain.Virologus</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">caheTnszR0WVuOiwOSlfCwAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -1584,7 +1584,7 @@
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="LUEz4/XILUe+OEAg+t8StAAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Vedofelsz[]</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">domain.Vedofelsz[]</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">Xxm/aVwqD0q/BBgFJ97/SwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:ATTR name="#CallActions" type="integer">5</XPD:ATTR>
@@ -1612,7 +1612,7 @@
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="h1ofkXnhZEmuu9kgEUCoDwAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Agens[]</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">domain.Agens[]</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">N2CY4p3uLEmys5ueRfmC+QAA</XPD:REF>
 </XPD:OBJ>
 </XPD:OBJ>
@@ -1628,7 +1628,7 @@
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="CVDBjO92XU+3lud3HK/HhQAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Virologus[]</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">domain.Virologus[]</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">cTIIJ+uZa0GHsHhfoGBh1gAA</XPD:REF>
 </XPD:OBJ>
 <XPD:ATTR name="#CallActions" type="integer">6</XPD:ATTR>
@@ -1645,7 +1645,7 @@
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="Fpy+OByYQkSOd3fWdrR9awAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Agens[]</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">domain.Agens[]</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">ap2Y/AHBuk+wKZOFi8XBWwAA</XPD:REF>
 </XPD:OBJ>
 <XPD:ATTR name="#CallActions" type="integer">4</XPD:ATTR>
@@ -1711,7 +1711,7 @@
 <XPD:ATTR name="#Parameters" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="Parameters[0]" type="UMLParameter" guid="8bm/4766lEW/FE/BHB9HNQAA">
 <XPD:ATTR name="DirectionKind" type="UMLParameterDirectionKind">pdkReturn</XPD:ATTR>
-<XPD:ATTR name="TypeExpression" type="string">Mezo[]</XPD:ATTR>
+<XPD:ATTR name="TypeExpression" type="string">domain.Mezo[]</XPD:ATTR>
 <XPD:REF name="BehavioralFeature">/KDnoNpST0qAbza1MkCspQAA</XPD:REF>
 </XPD:OBJ>
 <XPD:ATTR name="#CallActions" type="integer">3</XPD:ATTR>
@@ -2517,7 +2517,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="4FHvp5z8AE2ujvpA22gjeAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="D2tzWOb6p0G0W+0f8y9gZAAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="stRjM08Z8U2UDqC/nDyV+AAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -2630,7 +2630,7 @@
 <XPD:REF name="Tail">kKLKDNm0UUaf4ADBVpOXJAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="ENjb5dm+Yk6hfe3iqUPsWAAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">listCodes(): Agens[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">listCodes(): domain.Agens[]</XPD:ATTR>
 <XPD:REF name="Model">JUAH3/HhaEWQfDes+WQSfAAA</XPD:REF>
 <XPD:REF name="HostEdge">Aep4z/2BsEq8xicbeI6huQAA</XPD:REF>
 </XPD:OBJ>
@@ -2801,7 +2801,7 @@
 <XPD:REF name="Tail">kKLKDNm0UUaf4ADBVpOXJAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="rt7NuMl6VECR/tiuVnYW1wAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">listNgh(): Virologus[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">listNgh(): domain.Virologus[]</XPD:ATTR>
 <XPD:REF name="Model">5g0cusijgkm//gxWTs3VvAAA</XPD:REF>
 <XPD:REF name="HostEdge">FzECY9ibQEyQjXnHDDIO6QAA</XPD:REF>
 </XPD:OBJ>
@@ -3344,7 +3344,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="EhscOHXT3U+atd/uhMnhsgAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="bGL8VaVg1UmVbxJCs1KW/wAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="9PLO3+bfjUCjGVWbD5EIHAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -3457,7 +3457,7 @@
 <XPD:REF name="Tail">JCAtOnytEUeHt6djUB/8HAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="YQNr8n/+D0qtsq1aE7FzBwAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">listNghMezo(): Mezo[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">listNghMezo(): domain.Mezo[]</XPD:ATTR>
 <XPD:REF name="Model">iS19Fc2ldk6Ptp5BKQDQJwAA</XPD:REF>
 <XPD:REF name="HostEdge">NI6sT0zP7UO4kgxVd0ACRgAA</XPD:REF>
 </XPD:OBJ>
@@ -4096,7 +4096,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="/0ZlZ6Ry9UuKktktJBYf8QAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="596E5/0lYU6WWWvWxknNrgAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="9f+VLBrnkEaiTNyKs96YQwAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -4218,7 +4218,7 @@
 <XPD:REF name="Tail">QaFDUBhgAUeep8cCEkUosAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="D9foJsFqMUWd4iBu+LXqfgAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">4 : listNgh(): Virologus[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">4 : listNgh(): domain.Virologus[]</XPD:ATTR>
 <XPD:REF name="Model">+clkzyjKn0CdXe5u42KMGAAA</XPD:REF>
 <XPD:REF name="HostEdge">mpqE6NGGrEmTOnaZCz0s+QAA</XPD:REF>
 </XPD:OBJ>
@@ -4554,7 +4554,7 @@
 <XPD:REF name="Tail">QaFDUBhgAUeep8cCEkUosAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="coXfZG3My0SD5ugbBrq1ewAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">14 : listEq(): Vedofelsz[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">14 : listEq(): domain.Vedofelsz[]</XPD:ATTR>
 <XPD:REF name="Model">r+6Hr0F2ikq+JeZZJEVBiAAA</XPD:REF>
 <XPD:REF name="HostEdge">iOPihfBqLkq4s8Y71ZxtXwAA</XPD:REF>
 </XPD:OBJ>
@@ -5053,7 +5053,7 @@
 </XPD:OBJ>
 </XPD:OBJ>
 <XPD:OBJ name="OwnedCollaborationInstanceSets[3]" type="UMLCollaborationInstanceSet" guid="Pc/rpVAovkuTPNHRQMCYdwAA">
-<XPD:ATTR name="Name" type="string">Balta</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">domain.Balta</XPD:ATTR>
 <XPD:REF name="RepresentedClassifier">erTuVIsoaUKQcaaV0ziGtAAA</XPD:REF>
 <XPD:ATTR name="#InteractionInstanceSets" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="InteractionInstanceSets[0]" type="UMLInteractionInstanceSet" guid="QBogNLA6ZUOOcsgtPAL8iQAA">
@@ -5061,7 +5061,7 @@
 <XPD:REF name="Context">Pc/rpVAovkuTPNHRQMCYdwAA</XPD:REF>
 <XPD:ATTR name="#OwnedDiagrams" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="OwnedDiagrams[0]" type="UMLSequenceDiagram" guid="u3QlAWCCI06xssiBQPLchwAA">
-<XPD:ATTR name="Name" type="string">Balta</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">domain.Balta</XPD:ATTR>
 <XPD:ATTR name="MessageSignature" type="UMLMessageSignatureKind">mskNameAndType</XPD:ATTR>
 <XPD:REF name="DiagramOwner">QBogNLA6ZUOOcsgtPAL8iQAA</XPD:REF>
 <XPD:OBJ name="DiagramView" type="UMLSequenceDiagramView" guid="Ys5Uan+hEkabTt/YrhbfvwAA">
@@ -5077,7 +5077,7 @@
 <XPD:ATTR name="Height" type="integer">373</XPD:ATTR>
 <XPD:REF name="Model">bwoKuXkZLEqaaUj/F/wP3AAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="LabelView" guid="WzVQd/I8gkCM6d7CX7GWeQAA">
-<XPD:ATTR name="Text" type="string">Balta</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">domain.Balta</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="FrameTypeLabel" type="LabelView" guid="pJN5ZwCDfkmPy1ALXT6KtwAA">
 <XPD:ATTR name="FontStyle" type="integer">1</XPD:ATTR>
@@ -5167,7 +5167,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="HgGLMK/TwEWvNI5RRVohJwAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="4S9baC9+JUOQ6IFNfqhNowAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="YlMM1StJE0i9TODyqQm9mAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -5289,7 +5289,7 @@
 <XPD:REF name="Tail">jQYNqe60XEWTYDGlI2q7wAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="oMWjTnB9h0O7uTVtgevTMwAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">4 : listNgh(): Virologus[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">4 : listNgh(): domain.Virologus[]</XPD:ATTR>
 <XPD:REF name="Model">yqnHdDIEZkOfYZrGcbLPLAAA</XPD:REF>
 <XPD:REF name="HostEdge">VKxEPYteAEOXfX26N5iVDQAA</XPD:REF>
 </XPD:OBJ>
@@ -5843,7 +5843,7 @@
 </XPD:OBJ>
 <XPD:ATTR name="#OwnedFrames" type="integer">1</XPD:ATTR>
 <XPD:OBJ name="OwnedFrames[0]" type="UMLFrame" guid="bwoKuXkZLEqaaUj/F/wP3AAA">
-<XPD:ATTR name="Name" type="string">Balta</XPD:ATTR>
+<XPD:ATTR name="Name" type="string">domain.Balta</XPD:ATTR>
 <XPD:ATTR name="FrameKind" type="string">sd</XPD:ATTR>
 <XPD:REF name="InteractionInstanceSet">QBogNLA6ZUOOcsgtPAL8iQAA</XPD:REF>
 <XPD:ATTR name="#Views" type="integer">1</XPD:ATTR>
@@ -6010,7 +6010,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="2PBRSYg66UWFqookfzcMvwAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="mbWS8c2/IkSd7DsWcnQPTwAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="1T8ho0LXtk+S361K6ABT3AAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -6200,7 +6200,7 @@
 <XPD:REF name="Tail">fSPhkaHf/EGjxcvhmXNHxgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="CUxUgWTPdUKn+hGlgEGYpAAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">6 : listEq(): Vedofelsz[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">6 : listEq(): domain.Vedofelsz[]</XPD:ATTR>
 <XPD:REF name="Model">32BtPki4hEyATv1vYloggQAA</XPD:REF>
 <XPD:REF name="HostEdge">3dSz7o1SgkqwZIN7Xh6ZQQAA</XPD:REF>
 </XPD:OBJ>
@@ -6267,7 +6267,7 @@
 <XPD:REF name="Tail">fSPhkaHf/EGjxcvhmXNHxgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="nI2Ta6cYs0mGWwsr4zq+ZQAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">8 : listCodes(): Agens[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">8 : listCodes(): domain.Agens[]</XPD:ATTR>
 <XPD:REF name="Model">EZVzjy9vqESS08I2FwzaNQAA</XPD:REF>
 <XPD:REF name="HostEdge">YFfyrLCQfEWUNBhcIy632gAA</XPD:REF>
 </XPD:OBJ>
@@ -6334,7 +6334,7 @@
 <XPD:REF name="Tail">fSPhkaHf/EGjxcvhmXNHxgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="RIXYUKd7Mk6qLR51LiXVtwAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">10 : listNgh(): Virologus[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">10 : listNgh(): domain.Virologus[]</XPD:ATTR>
 <XPD:REF name="Model">2T2OuXDgeUedQIozaeYMLwAA</XPD:REF>
 <XPD:REF name="HostEdge">iePF4ZmA2k20Vdz0igRO8gAA</XPD:REF>
 </XPD:OBJ>
@@ -6401,7 +6401,7 @@
 <XPD:REF name="Tail">fSPhkaHf/EGjxcvhmXNHxgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="LW48LWz21k+7dsEWN0qwiwAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">12 : listNghMezo(): Mezo[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">12 : listNghMezo(): domain.Mezo[]</XPD:ATTR>
 <XPD:REF name="Model">mbgaMAJQIUOGkVW1aJYRxwAA</XPD:REF>
 <XPD:REF name="HostEdge">1NrEkOSrS0iPv4RDsHGYQQAA</XPD:REF>
 </XPD:OBJ>
@@ -6843,7 +6843,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="M+1/5yYItkqoyKFd4M7HSgAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="X3PVZgG2+EO7kiIavjOODQAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="rNu12Rx+gku+RDo60B9ohAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -6965,7 +6965,7 @@
 <XPD:REF name="Head">mxKHbci2KUikXRFEAZCmswAA</XPD:REF>
 <XPD:REF name="Tail">3skVoptFqEqGj7MKPzczwwAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="EglIet+qOEumZRlshNQmrwAA">
-<XPD:ATTR name="Text" type="string">4 : listCodes(): Agens[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">4 : listCodes(): domain.Agens[]</XPD:ATTR>
 <XPD:REF name="Model">NfaORSK3AE+KfvEoN/jHxAAA</XPD:REF>
 <XPD:REF name="HostEdge">c5WOrT0PuESOarrCKnyF8QAA</XPD:REF>
 </XPD:OBJ>
@@ -7284,7 +7284,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="W6hHR2iuuEK+8pYx3X3lbwAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="/adfw/+VJ06huyDzzx+rAwAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="9fFKbroBDEGe1o52CuoYrgAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -7408,7 +7408,7 @@
 <XPD:REF name="Tail">a7Sgwilf6ESMwVcY1uI8lAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="JpG8YRBTP02UrxhVne/mqwAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">4 : listEq(): Vedofelsz[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">4 : listEq(): domain.Vedofelsz[]</XPD:ATTR>
 <XPD:REF name="Model">dUuLWxR4IU29AyxzTJdeBgAA</XPD:REF>
 <XPD:REF name="HostEdge">BLkLlEATY0OR6dwCQFjYDwAA</XPD:REF>
 </XPD:OBJ>
@@ -7726,7 +7726,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="mPx6H7ctHUq3BhUfTgO96gAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="5skK8Ysfv0m3i6DhodR9FwAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="/x64lJX5UkubQ0NbEamsnwAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -8168,7 +8168,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="KfzVYm2eHkaYvHQW4Uf0jQAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="+BVSmFoLokOl/FCnguW09gAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="snbJZ/7MjEiLlQDeW7kcRwAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -8358,7 +8358,7 @@
 <XPD:REF name="Tail">8IhcmKT0kkWI78W+HpC4cgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="lRi+zCFDq0iY4Apz+uFfRgAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">6 : listEq(): Vedofelsz[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">6 : listEq(): domain.Vedofelsz[]</XPD:ATTR>
 <XPD:REF name="Model">JooY5Exj5EyYF/gkbviXeQAA</XPD:REF>
 <XPD:REF name="HostEdge">y+uElhQ4T0OJBJjvR4qtjwAA</XPD:REF>
 </XPD:OBJ>
@@ -8424,7 +8424,7 @@
 <XPD:REF name="Head">rctwsANAvEea0q1brY6VTwAA</XPD:REF>
 <XPD:REF name="Tail">8IhcmKT0kkWI78W+HpC4cgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="xHecoDPPHUaaYrh5DhRN1gAA">
-<XPD:ATTR name="Text" type="string">8 : listCodes(): Agens[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">8 : listCodes(): domain.Agens[]</XPD:ATTR>
 <XPD:REF name="Model">/NngmpzBeECSjVWV0NRAWAAA</XPD:REF>
 <XPD:REF name="HostEdge">ITtsHP/vY0WWQd9wPRu3wwAA</XPD:REF>
 </XPD:OBJ>
@@ -8491,7 +8491,7 @@
 <XPD:REF name="Tail">8IhcmKT0kkWI78W+HpC4cgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="lOTTSLQfqE6Wg9bNYZE7VwAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">10 : listNgh(): Virologus[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">10 : listNgh(): domain.Virologus[]</XPD:ATTR>
 <XPD:REF name="Model">mHYrX5D3ik2q3rD37wCujQAA</XPD:REF>
 <XPD:REF name="HostEdge">xiNKZuNL9EqdRnrqqz2K7wAA</XPD:REF>
 </XPD:OBJ>
@@ -8558,7 +8558,7 @@
 <XPD:REF name="Tail">8IhcmKT0kkWI78W+HpC4cgAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="p4vG5rH40EC4sbRSAXKq7wAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">12 : listNghMezo(): Mezo[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">12 : listNghMezo(): domain.Mezo[]</XPD:ATTR>
 <XPD:REF name="Model">cTGDoN+mlE2kkNF9ySNTMAAA</XPD:REF>
 <XPD:REF name="HostEdge">goLu3weFw0O5Jeigjj5LAgAA</XPD:REF>
 </XPD:OBJ>
@@ -9001,7 +9001,7 @@
 <XPD:OBJ name="NameCompartment" type="UMLNameCompartmentView" guid="smB5By44MEe2D/vnNMlrbAAA">
 <XPD:OBJ name="NameLabel" type="LabelView" guid="VZYDcaGuwEOJ4BoH4f8bRwAA">
 <XPD:ATTR name="FontStyle" type="integer">4</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">c : Controller</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">c : domain.Controller</XPD:ATTR>
 </XPD:OBJ>
 <XPD:OBJ name="StereotypeLabel" type="LabelView" guid="YXqUMO7dz0qtgpDjf2XcbAAA">
 <XPD:ATTR name="Visible" type="boolean">False</XPD:ATTR>
@@ -9114,7 +9114,7 @@
 <XPD:REF name="Tail">X16X9bzWH0yPgI1pj0z6XAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="324duTr4bU6cPkeJSFtivwAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">listEq(): Vedofelsz[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">listEq(): domain.Vedofelsz[]</XPD:ATTR>
 <XPD:REF name="Model">AMxZD6iUT0u4avXeKpZYWgAA</XPD:REF>
 <XPD:REF name="HostEdge">VT79aAfEO0q0iIqbw1ZPnQAA</XPD:REF>
 </XPD:OBJ>
@@ -9285,7 +9285,7 @@
 <XPD:REF name="Tail">X16X9bzWH0yPgI1pj0z6XAAA</XPD:REF>
 <XPD:OBJ name="NameLabel" type="EdgeLabelView" guid="opPSVsgm4Ea9qJ2DYn/RlAAA">
 <XPD:ATTR name="Distance" type="real">10</XPD:ATTR>
-<XPD:ATTR name="Text" type="string">listNgh(): Virologus[]</XPD:ATTR>
+<XPD:ATTR name="Text" type="string">listNgh(): domain.Virologus[]</XPD:ATTR>
 <XPD:REF name="Model">QHjkzFehAk+MtVEdx2JOCwAA</XPD:REF>
 <XPD:REF name="HostEdge">/hza1WbLe0iVArS58ZcOewAA</XPD:REF>
 </XPD:OBJ>
