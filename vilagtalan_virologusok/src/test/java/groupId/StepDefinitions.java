@@ -164,7 +164,7 @@ public class StepDefinitions {
         virologist.setJatek(game);
         virologist.setField(actual);
         virologist.setNeighbours(neighbours);
-        virologist.addAgent(new TestRandom());
+        virologist.megken(virologist, new TestRandom());
     }
     @Then("He gets to another field")
     public void he_gets_to_another_field() {
@@ -173,7 +173,7 @@ public class StepDefinitions {
     }
     @Given("The other virologist is paralyzed")
     public void the_other_virologist_is_paralyzed() {
-        otherVirologist.addAgent(new Benit());
+        otherVirologist.megken(otherVirologist, new Benit());
     }
     @Given("the other virologist has an equipment.")
     public void the_other_virologist_has_an_equipment() {
