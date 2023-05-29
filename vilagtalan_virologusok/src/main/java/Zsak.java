@@ -38,6 +38,7 @@ public class Zsak extends Vedofelsz {
     /**
      * Visszaállítja a tulajdonosa anyaggyűjtőképességét
      */
+    @Override
     public void end(){
         tulaj.getAnyag().maxCsokkent();
     }

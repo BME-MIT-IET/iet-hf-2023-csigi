@@ -6,6 +6,10 @@ import java.util.Random;
  * Védőköpenyt reprezentáló osztály, a köpeny az ágenseket 82,3%-os hatásfokkal tartja távol.
  * */
 public class Kopeny extends Vedofelsz {
+	/** Random szám generáló objektum a kivédés esélyének modellezéséhez
+	 * @author Benczik
+	 */
+	private Random rand = new Random();
 
 	/**
 	 * Tulajdonossal ellátott paraméterű konstruktor
@@ -14,7 +18,7 @@ public class Kopeny extends Vedofelsz {
 	public Kopeny(Virologus v){
 		tulaj = v;
 		v.addVedofelsz(this);
-		int a = Controller.benalepes_priority;
+		int a = Controller.BENALEPES_PRIORITY;
 	}
 
 	/**
@@ -33,7 +37,6 @@ public class Kopeny extends Vedofelsz {
 	@Override
     public boolean megkentek(Agens mivel, Virologus ki) {
 		if (Controller.random) {
-			Random rand = new Random();
 			if (rand.nextDouble() > 0.823) {
 				return true;
 			}

@@ -21,8 +21,7 @@ public class TamadFrame extends JDialog {
         /**
          * Az OK gomb megnyomasa utan meghivja a Controller megfelelo fuggvenyet, kiirja a hibauzenetet, ha van
          */
-        buttonOK.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
+        buttonOK.addActionListener(_event -> {
                 try {
                     String args[] = {"", virComboBox.getSelectedItem().toString()};
                     String err = Controller.attack(args);
@@ -33,16 +32,12 @@ public class TamadFrame extends JDialog {
                 }
                 onOK();
             }
-        });
+        );
 
         /**
          * Cancel gomb megnyomasa eseten bezarja az ablakot
          */
-        buttonCancel.addActionListener(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        });
+        buttonCancel.addActionListener(_event -> onCancel());
 
         // call onCancel() when cross is clicked
         setDefaultCloseOperation(DO_NOTHING_ON_CLOSE);
@@ -53,11 +48,7 @@ public class TamadFrame extends JDialog {
         });
 
         // call onCancel() on ESCAPE
-        contentPane.registerKeyboardAction(new ActionListener() {
-            public void actionPerformed(ActionEvent e) {
-                onCancel();
-            }
-        }, KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        contentPane.registerKeyboardAction(_event -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
     private void onOK() {
@@ -69,13 +60,6 @@ public class TamadFrame extends JDialog {
         // add your code here if necessary
         dispose();
     }
-
-//    public static void main(String[] args) {
-//        TamadFrame dialog = new TamadFrame();
-//        dialog.pack();
-//        dialog.setVisible(true);
-//        System.exit(0);
-//    }
 
     /**
      * Inicializal

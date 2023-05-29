@@ -21,15 +21,11 @@ public abstract class Agens extends Hatas implements Leptetheto{
 	/** Rákenték-e már valakire az ágenst. */
 	protected boolean elhasznalt = false;
 
-	//@Override
-	//public int compareTo(Agens agn) {
-	//	return agn.getName().compareTo(this.getName());
-	//}
-
 	/**
 	 * Minden körben csökken eggyel, amikor lejár, megszűnik az ágens
 	 * @author safar
 	 * */
+	@Override
 	public void tick() { eletek--; if(eletek == 0) end();}
 
 

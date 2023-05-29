@@ -17,6 +17,7 @@ public class Ovohely extends Mezo {
 
 	/** Odaadja a mezőn lévő védőfelszerelést (a mezőről törlődik)
 	 * @return A védőfelszerelés */
+	@Override
 	public Vedofelsz felveszVedofelsz() {
 		Vedofelsz vdf = vedofelsz;
 		vedofelsz = null;

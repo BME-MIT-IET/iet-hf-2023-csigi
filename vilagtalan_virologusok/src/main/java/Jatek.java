@@ -24,6 +24,8 @@ public class Jatek {
 
 	/** A játékot megjelenítő ablak */
 	static public MainFrame frame;
+	/** Random generáló objektum a pályageneráláshoz*/
+	private Random rand;
 
 
 	/**
@@ -36,6 +38,7 @@ public class Jatek {
 		palya = new HashMap<>();
 		kodok = new ArrayList<>();
 		frame = Frame;
+		rand = new Random();
 	}
 
 	/**
@@ -79,7 +82,6 @@ public class Jatek {
 	 */
 	public void generateMezok(int boardSize){
 		int r1, r2;
-		Random rand = new Random();
 		for (int i = 0; i < boardSize; ++i){
 			r1 = rand.nextInt(4);
 			switch (r1){
@@ -117,7 +119,6 @@ public class Jatek {
 	 * Figyel arra, hogy a létrehozott szomszédsági gráf összefüggő legyen az összes mezőre nézve
 	 */
 	public void boardSzomszed(){
-		Random rand = new Random();
 		int r;
 		ArrayList<Mezo> szomszedok = new ArrayList<>();
 
@@ -146,7 +147,6 @@ public class Jatek {
 	 * @param virologusCount mennyi virológus legyen a pályán
 	 */
 	public void virologusokElhelyez(int virologusCount, Jatek jatek){
-		Random rand = new Random();
 		int r;
 		for (int i = 0; i < virologusCount; ++i){
 			r = rand.nextInt(palya.size());
@@ -236,7 +236,7 @@ public class Jatek {
 	 * @return true ha a két paraméter ugyanolyan típusú ágens, false egyébként
 	 */
 	public boolean compareAgn(Agens agn1, Agens agn2){
-		return agn1.getName() == agn2.getName();
+		return agn1.getName().equals( agn2.getName() );
 	}
 
 	public boolean containsAgn(ArrayList<Agens> agnList, Agens agn){
@@ -255,7 +255,6 @@ public class Jatek {
 	 * @param code A mezon talalhato kod (csak labor)
 	 */
 	public void addField(String field_id, FieldType field_type, Vedofelsz equipment, boolean isBear, Agens code){
-		//switch (FieldType.values()[field_type]){
 		switch (field_type){
 			case MEZO:
 				Mezo m = new Mezo();
@@ -289,7 +288,7 @@ public class Jatek {
 	 * @param field_id a torlendo mezo azonositoja
 	 */
 	public void removeField(Integer field_id){
-
+		throw new UnsupportedOperationException();
 	}
 
 	/**
