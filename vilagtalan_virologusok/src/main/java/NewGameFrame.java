@@ -26,18 +26,18 @@ public class NewGameFrame extends JDialog {
         getRootPane().setDefaultButton(buttonOK);
 
         buttonOK.addActionListener(_event -> {
-                try {
-                    int virc = Integer.parseInt(comboBox1.getSelectedItem().toString());
-                    String error = Controller.newgame(virc);
-                    if (error.equals(""))
-                        JOptionPane.showMessageDialog(contentPane, error);
-                    src.update();
-                    onOK();
-                } catch (Exception ex) {
-                    JOptionPane.showMessageDialog(contentPane, ex.getMessage());
-                    JOptionPane.showMessageDialog(contentPane, "Nem sikerült számmá alakítani!");
+                    try {
+                        int virc = Integer.parseInt(comboBox1.getSelectedItem().toString());
+                        String error = Controller.newgame(virc);
+                        if (error.equals(""))
+                            JOptionPane.showMessageDialog(contentPane, error);
+                        src.update();
+                        onOK();
+                    } catch (Exception ex) {
+                        JOptionPane.showMessageDialog(contentPane, ex.getMessage());
+                        JOptionPane.showMessageDialog(contentPane, "Nem sikerült számmá alakítani!");
+                    }
                 }
-            }
         );
 
         buttonCancel.addActionListener(_event -> onCancel());
@@ -51,7 +51,7 @@ public class NewGameFrame extends JDialog {
         });
 
         // call onCancel() on ESCAPE
-        contentPane.registerKeyboardAction(_event ->onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
+        contentPane.registerKeyboardAction(_event -> onCancel(), KeyStroke.getKeyStroke(KeyEvent.VK_ESCAPE, 0), JComponent.WHEN_ANCESTOR_OF_FOCUSED_COMPONENT);
     }
 
     /**
