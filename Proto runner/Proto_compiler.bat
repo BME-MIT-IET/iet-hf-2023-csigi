@@ -15,9 +15,9 @@ tar -xf Proto.zip -C Vilagtalan_virologusok
 REM Fordiatas, futtatas:
 javac -encoding UTF-8 -d Vilagtalan_virologusok\forditott Vilagtalan_virologusok\*.java
 
-if not defined l ( if not defined s ( java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.Controller
+if not defined l ( if not defined s ( java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.domain.Controller
 pause ))
-if not defined l ( if defined s ( java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.Controller >"%s%.txt" ))
-if defined l ( if not defined s ( type "Test_txt\%l%.txt"|java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.Controller
+if not defined l ( if defined s ( java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.domain.Controller >"%s%.txt" ))
+if defined l ( if not defined s ( type "Test_txt\%l%.txt"|java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.domain.Controller
 pause ))
-if defined l ( if defined s ( type "Test_txt\%l%.txt"|java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.Controller >"%s%.txt" ))
+if defined l ( if defined s ( type "Test_txt\%l%.txt"|java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.domain.Controller >"%s%.txt" ))

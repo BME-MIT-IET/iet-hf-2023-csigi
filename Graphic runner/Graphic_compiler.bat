@@ -11,5 +11,5 @@ tar -xf Graphic.zip -C Vilagtalan_virologusok
 
 REM Fordiatas, futtatas:
 javac -cp forms_rt.jar -encoding UTF-8 -d Vilagtalan_virologusok\forditott Vilagtalan_virologusok\*.java
-java -cp Vilagtalan_virologusok\forditott\;forms_rt.jar vilagtalan_virologusok.Controller
+java -cp Vilagtalan_virologusok\forditott\;forms_rt.jar vilagtalan_virologusok.domain.Controller
 pause

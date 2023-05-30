@@ -11,4 +11,4 @@ tar -xf Skeleton.zip -C Vilagtalan_virologusok
 
 REM Fordiatas, futtatas:
 javac -encoding UTF-8 -d Vilagtalan_virologusok\forditott Vilagtalan_virologusok\*.java
-java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.Controller
+java -cp Vilagtalan_virologusok\forditott\ vilagtalan_virologusok.domain.Controller
