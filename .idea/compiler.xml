@@ -7,7 +7,13 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="vilagtalan_virologusok" />
+        <module name="vilagtalan_virologusok (1)" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="Szoftprojlab" target="17" />
+      <module name="vilagtalan_virologusok" target="17" />
+      <module name="vilagtalan_virologusok (1)" target="17" />
+    </bytecodeTargetLevel>
   </component>
 </project>
