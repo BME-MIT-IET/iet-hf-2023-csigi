@@ -1,0 +1,5 @@
+## A projektmunkáról
+Házi feladatunkban a szoftverprojekt laboratórium tárgy soránmegvalósított játékalkalmazás vizsgálatát valósítjuk meg. Célunk, hogy a feladat keretein belül megismerkedjünk minél több ellenőrzési és CI/CD során alkalmazott technológiával, keretrendszerrel. A szoftver esetleges hibáit feltárjuk, javítsuk. A csapatban való fejlesztés munkamenetét kipróbáljuk.
+
+## Az alkalmazásról
+Az alkalmazás egy körökre osztott játék, amiben minden játékos egy virológust irányít. Céljuk, hogy elsőként tanulják meg az összes ágens genetikai kódját. Az ágensek - miután megtanulta azt az adott virológus - felhasználható más játékosok akadályozására, vagy a saját avatarunk segítésére. Ezentúl különféle segítőhatásokkal rendelkező védőfelszereléseket is gyűjthetünk. A játékot a játékosok közti sok interakció mellett a véletlenszerű események is izgalmassá teszik.
