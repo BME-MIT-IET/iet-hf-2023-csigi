@@ -1,4 +1,4 @@
-package frames;
+package cucumber;
 
 import io.cucumber.java.en.*;
 

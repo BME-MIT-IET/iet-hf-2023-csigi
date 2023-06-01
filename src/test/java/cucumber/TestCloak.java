@@ -1,4 +1,4 @@
-package frames;
+package cucumber;
 
 import domain.Agens;
 import domain.Kopeny;
