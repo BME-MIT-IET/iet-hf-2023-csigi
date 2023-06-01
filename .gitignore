@@ -82,3 +82,5 @@ fabric.properties
 
 vilagtalan_virologusok/.idea/
 target/surefire-reports/
+/.idea/
+target/

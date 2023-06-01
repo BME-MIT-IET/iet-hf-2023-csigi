@@ -1,4 +1,4 @@
-package cucumber;
+package frames;
 
 import domain.Agens;
 import domain.Jatek;

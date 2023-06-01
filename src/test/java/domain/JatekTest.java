@@ -1,6 +1,5 @@
-package Junit;
+package domain;
 
-import domain.*;
 import frames.MainFrame;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;

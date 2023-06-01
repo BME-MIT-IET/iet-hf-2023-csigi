@@ -1,9 +1,5 @@
-package Junit;
+package domain;
 
-import domain.Benit;
-import domain.Kesztyu;
-import domain.Medve;
-import domain.Virologus;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.*;
