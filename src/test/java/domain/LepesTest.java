@@ -1,6 +1,5 @@
-package Junit;
+package domain;
 
-import domain.Lepes;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.*;
 

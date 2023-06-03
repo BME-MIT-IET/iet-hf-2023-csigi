@@ -1,7 +1,5 @@
-package Junit;
+package domain;
 
-import domain.Anyag;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.ValueSource;
 
@@ -10,7 +8,7 @@ import static org.junit.jupiter.api.Assertions.*;
 
 class AnyagTest {
 
-    private Anyag anyag = new Anyag();
+    private final Anyag anyag = new Anyag();
     private final int alapMennyiseg = 100;
 
     @ParameterizedTest
